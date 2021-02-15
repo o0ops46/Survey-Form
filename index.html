@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatwick Car Buying Service</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Gatwick Car Buying Service</h1>
+      <p id="description">
+        Simply fill out the form to get your valuation in just few minutes.
+      </p>
+    </header>
+
+    <section id="form-section">
+      <form id="survey-form" action="" method="get">
+        <div class="first">
+          <label id="name-label" for="name">Name</label>
+          <input
+            placeholder="Enter your name "
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <div class="first">
+          <label id="email-label" for="email">Email</label>
+          <input
+            placeholder="Enter your email"
+            type="email"
+            id="email"
+            pattern=".+@gmail.com"
+            size="30"
+            required
+          />
+        </div>
+        <div class="first registration">
+          <label for="registration">What is the car registration number?</label>
+          <input
+            type="text"
+            name="registration"
+            id="registration"
+            placeholder="Car registration number"
+            required
+          />
+        </div>
+        <div class="first">
+          <label  id="number-label" for="number">When was the car 1st registered?</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Year"
+            min="2000"
+            max="2020"
+          />
+        </div>
+        <div class="first" id="dropdown">
+          <label for="condition">What is the condition of your car?</label>
+          <select name="condition" id="condition">
+            <option value="poor">Poor</option>
+            <option value="good">Good</option>
+            <option value="excellent">Excellent</option>
+          </select>
+        </div>
+        <div class="first payment">
+          <p>Please select the preffered method of payment</p>
+          <div>
+            <input type="radio" id="cash" name="payment" value="cash" checked />
+            <label for="payment">Cash</label>
+          </div>
+          <div>
+            <input type="radio" id="transfer" name="payment" value="transfer" />
+            <label for="payment">Bank transfer</label>
+          </div>
+          <div>
+            <input type="radio" id="cheque" name="payment" value="cheque" />
+            <label for="payment">Cheque</label>
+          </div>
+        </div>
+        <div class="first features">
+          <p>What features are available on your car?</p>
+
+          <div>
+            <input
+              type="checkbox"
+              id="steering-assist"
+              name="features"
+                   value="steering-assist"
+            />
+            <label for="steering-assist">Steering Assist</label>
+          </div>
+          <div>
+            <input type="checkbox" id="refrigerator" value="refrigerator" name="features" />
+            <label for="refrigerator">Refrigerator</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="adaptive-cruise"
+                   value="adaptive-cruise"
+                   name="features"
+            />
+            <label for="adaptive-cruise">Adaptive Cruise Control</label>
+          </div>
+          <div>
+            <input type="checkbox" id="soft-close" value="soft-close" name="features" />
+            <label for="soft-close">Soft Close</label>
+          </div>
+          <div>
+            <input type="checkbox" id="panoramic" value="panoramic" name="features" />
+            <label for="panoramic">Panoramic Sunroof</label>
+          </div>
+        </div>
+        
+      
+
+        <label for="details">Any specific details?</label><br />
+        <textarea name="details id="details" placeholder="Enter more details here..."></textarea>
+        <br />
+        <input id="submit" type="submit" value="Send Form" />
+      </form>
+    </section>
+
+  </body>
+</html>
